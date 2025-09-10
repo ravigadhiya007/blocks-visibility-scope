@@ -1,2 +1,2 @@
 # blocks-visibility-scope
-Provide an option to hide any Gutenburg block to different screens sizes.
+Easily manage block visibility across different screen sizes in the WordPress block editor.
