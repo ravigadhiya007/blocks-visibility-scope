@@ -1,0 +1,25 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ */
+
+/* Frontend responsive visibility rules */
+@media (max-width: 575.98px) {
+	.bvs-hide-xs { display: none !important; }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+	.bvs-hide-sm { display: none !important; }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.bvs-hide-md { display: none !important; }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	.bvs-hide-lg { display: none !important; }
+}
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+	.bvs-hide-xl { display: none !important; }
+}
+@media (min-width: 1400px) {
+	.bvs-hide-xxl { display: none !important; }
+}

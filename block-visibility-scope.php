@@ -16,4 +16,39 @@
  * @package block-visibility-scope
  */
 
-defined( 'ABSPATH' ) || exit;
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
+/**
+ * Enqueue block editor assets and front-end styles.
+ */
+function action__bvs_enqueue_assets() {
+	// Enqueue the script.
+	$asset_file = include plugin_dir_path( __FILE__ ) . 'build/index.asset.php';
+	wp_enqueue_script(
+		'bvs_script',
+		plugins_url( 'build/index.js', __FILE__ ),
+		$asset_file['dependencies'],
+		$asset_file['version'],
+		true,
+	);
+
+	// Editor-only styles.
+	wp_enqueue_style(
+		'bvs_editor_style',
+		plugins_url( 'build/index.css', __FILE__ ),
+		array( 'wp-edit-blocks' ),
+		filemtime( plugin_dir_path( __FILE__ ) . 'build/index.css' )
+	);
+
+	// Frontend + Editor shared styles.
+	wp_enqueue_style(
+		'bvs_front_style',
+		plugins_url( 'build/style-index.css', __FILE__ ),
+		array(),
+		filemtime( plugin_dir_path( __FILE__ ) . 'build/style-index.css' )
+	);
+}
+add_action( 'enqueue_block_editor_assets', 'action__bvs_enqueue_assets' );
+add_action( 'wp_enqueue_scripts', 'action__bvs_enqueue_assets' );
