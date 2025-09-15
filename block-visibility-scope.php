@@ -35,12 +35,12 @@ function action__bvs_enqueue_assets() {
 	);
 
 	// Editor-only styles.
-	wp_enqueue_style(
-		'bvs_editor_style',
-		plugins_url( 'build/index.css', __FILE__ ),
-		array( 'wp-edit-blocks' ),
-		filemtime( plugin_dir_path( __FILE__ ) . 'build/index.css' )
-	);
+	// wp_enqueue_style(
+	// 	'bvs_editor_style',
+	// 	plugins_url( 'build/index.css', __FILE__ ),
+	// 	array( 'wp-edit-blocks' ),
+	// 	filemtime( plugin_dir_path( __FILE__ ) . 'build/index.css' )
+	// );
 
 	// Frontend + Editor shared styles.
 	wp_enqueue_style(
@@ -52,3 +52,9 @@ function action__bvs_enqueue_assets() {
 }
 add_action( 'enqueue_block_editor_assets', 'action__bvs_enqueue_assets' );
 add_action( 'wp_enqueue_scripts', 'action__bvs_enqueue_assets' );
+
+
+add_action( 'init', 'action__bvs_enqueue_editor_assets' );
+function action__bvs_enqueue_editor_assets() {
+	add_editor_style( plugins_url( 'build/index.css', __FILE__ ) );
+}

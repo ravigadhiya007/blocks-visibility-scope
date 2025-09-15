@@ -6,8 +6,7 @@
 /* Highlight blocks in editor that have visibility rules */
 .bvs-has-visibility-rule {
 	position: relative;
-	filter: blur(2px);
-	opacity: 0.7;
 	transition: 0.3s ease-in-out;
-	border: 2px dashed #ff0000;
+	border: 2px dashed #808080;
+	background-color: #dcdcdc;
 }
