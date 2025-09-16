@@ -1,7 +1,7 @@
 {
 	"name": "block-visibility-scope",
 	"version": "1.0.0",
-	"description": "Manage block visibility across different screen sizes.",
+	"description": "Easily manage block visibility across different screen sizes in the WordPress block editor.",
 	"author": "Ravi Gadhiya",
 	"license": "GPL-2.0-or-later",
 	"main": "build/index.js",

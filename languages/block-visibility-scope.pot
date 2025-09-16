@@ -1,0 +1,66 @@
+# Copyright (C) 2025 Ravi Gadhiya
+# This file is distributed under the GPLv2.
+msgid ""
+msgstr ""
+"Project-Id-Version: Block Visibility Scope 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/block-visibility-scope\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-09-16T14:18:57+02:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.8.1\n"
+"X-Domain: block-visibility-scope\n"
+
+#. Plugin Name of the plugin
+msgid "Block Visibility Scope"
+msgstr ""
+
+#. Description of the plugin
+msgid "Easily manage block visibility across different screen sizes in the WordPress block editor."
+msgstr ""
+
+#. Author of the plugin
+msgid "Ravi Gadhiya"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://profiles.wordpress.org/ravigadhiyawp"
+msgstr ""
+
+#: build/index.js:1
+#: src/inspector.js:18
+msgid "Visibility Control"
+msgstr ""
+
+#: build/index.js:1
+#: src/inspector.js:20
+msgid "Hide on Extra Small ( <576px - small phones )"
+msgstr ""
+
+#: build/index.js:1
+#: src/inspector.js:25
+msgid "Hide on Small ( 576px-767px - large phones )"
+msgstr ""
+
+#: build/index.js:1
+#: src/inspector.js:30
+msgid "Hide on Medium ( 768px-991px - tablets )"
+msgstr ""
+
+#: build/index.js:1
+#: src/inspector.js:35
+msgid "Hide on Large ( 992px-1199px - laptops )"
+msgstr ""
+
+#: build/index.js:1
+#: src/inspector.js:40
+msgid "Hide on Extra Large ( 1200px-1399px - desktops )"
+msgstr ""
+
+#: build/index.js:1
+#: src/inspector.js:45
+msgid "Hide on XXL ( ≥1400px - wide screens )"
+msgstr ""

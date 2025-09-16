@@ -11,7 +11,7 @@ const withVisibilityIndicator = createHigherOrderComponent((BlockListBlock) => {
 		const hasVisibility =
 			hideXS || hideSM || hideMD || hideLG || hideXL || hideXXL;
 		
-		// Add blur helper class.
+		// Add bg helper class.
 		if (hasVisibility) {
 			props.className = `${props.className || ''} bvs-has-visibility-rule`;
 		}

@@ -1,13 +1,13 @@
 <?php
 /**
  * Plugin Name:         Block Visibility Scope
- * Plugin URI:          #
+ * Plugin URI:          https://wordpress.org/plugins/block-visibility-scope/
  * Description:         Easily manage block visibility across different screen sizes in the WordPress block editor.
  * Version:             1.0.0
  * Requires at least:   6.3
  * Requires PHP:        7.4
  * Author:              Ravi Gadhiya
- * Author URI:          #
+ * Author URI:          https://github.com/ravigadhiya007
  * License:             GPLv2
  * License URI:         https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  * Text Domain:         block-visibility-scope
@@ -23,8 +23,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Enqueue block editor assets and front-end styles.
  */
-function action__bvs_enqueue_assets() {
-	// Enqueue the script.
+function action__bvs_enqueue_block_editor_assets() {
+	// Enqueue the editor script.
 	$asset_file = include plugin_dir_path( __FILE__ ) . 'build/index.asset.php';
 	wp_enqueue_script(
 		'bvs_script',
@@ -34,15 +34,20 @@ function action__bvs_enqueue_assets() {
 		true,
 	);
 
-	// Editor-only styles.
-	// wp_enqueue_style(
-	// 	'bvs_editor_style',
-	// 	plugins_url( 'build/index.css', __FILE__ ),
-	// 	array( 'wp-edit-blocks' ),
-	// 	filemtime( plugin_dir_path( __FILE__ ) . 'build/index.css' )
-	// );
+	// Load translations for editor script.
+	wp_set_script_translations(
+		'bvs_script',
+		'block-visibility-scope',
+		plugin_dir_path( __FILE__ ) . 'languages'
+	);
+}
+add_action( 'enqueue_block_editor_assets', 'action__bvs_enqueue_block_editor_assets' );
 
-	// Frontend + Editor shared styles.
+/**
+ * Enqueue front-end styles.
+ */
+function action__bvs_enqueue_styles() {
+	// Frontend styles.
 	wp_enqueue_style(
 		'bvs_front_style',
 		plugins_url( 'build/style-index.css', __FILE__ ),
@@ -50,11 +55,12 @@ function action__bvs_enqueue_assets() {
 		filemtime( plugin_dir_path( __FILE__ ) . 'build/style-index.css' )
 	);
 }
-add_action( 'enqueue_block_editor_assets', 'action__bvs_enqueue_assets' );
-add_action( 'wp_enqueue_scripts', 'action__bvs_enqueue_assets' );
+add_action( 'wp_enqueue_scripts', 'action__bvs_enqueue_styles' );
 
-
-add_action( 'init', 'action__bvs_enqueue_editor_assets' );
+/**
+ * Enqueue editor styles for the block editor.
+ */
 function action__bvs_enqueue_editor_assets() {
 	add_editor_style( plugins_url( 'build/index.css', __FILE__ ) );
 }
+add_action( 'admin_init', 'action__bvs_enqueue_editor_assets' );
