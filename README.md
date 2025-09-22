@@ -1,4 +1,4 @@
-# blocks-visibility-scope
+# Blocks Visibility Scope
 Block Visibility Scope gives you **full responsive control over any WordPress block**.
 You can decide where each block should be visible: small phones, tablets, laptops, desktops, or wide screens. 
 
@@ -21,3 +21,16 @@ You can decide where each block should be visible: small phones, tablets, laptop
 * 100% compatible with the **WordPress block editor (Gutenberg)**.  
 
 This is the simplest way to add responsive block visibility in WordPress without writing a single line of code.
+
+## Requirements
+
+- WordPress 6.3+
+- PHP 7.4+
+
+## Development
+
+1. Set up a local WordPress environment.
+2. In the `wp-content/plugins` folder, clone the GitHub repository: `https://github.com/ravigadhiya007/blocks-visibility-scope.git`
+3. Navigate to the `wp-content/plugins/blocks-visibility-scope` folder in the command line.
+4. Run the `npm install` command to install the plugin's dependencies within a `/node_modules/` folder.
+5. Run the `npm run start` command to compile and watch source files for changes while developing.
