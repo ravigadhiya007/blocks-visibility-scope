@@ -3,11 +3,10 @@
  * Plugin Name:         Block Visibility Scope
  * Plugin URI:          https://wordpress.org/plugins/block-visibility-scope/
  * Description:         Easily manage block visibility across different screen sizes in the WordPress block editor.
- * Version:             1.0.0
+ * Version:             1.0.1
  * Requires at least:   6.3
  * Requires PHP:        7.4
  * Author:              Ravi Gadhiya
- * Author URI:          https://github.com/ravigadhiya007
  * License:             GPLv2
  * License URI:         https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  * Text Domain:         block-visibility-scope

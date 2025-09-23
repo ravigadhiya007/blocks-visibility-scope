@@ -9,13 +9,17 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-09-16T14:18:57+02:00\n"
+"POT-Creation-Date: 2025-09-16T15:32:16+02:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.8.1\n"
 "X-Domain: block-visibility-scope\n"
 
 #. Plugin Name of the plugin
 msgid "Block Visibility Scope"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://wordpress.org/plugins/block-visibility-scope/"
 msgstr ""
 
 #. Description of the plugin
@@ -27,7 +31,7 @@ msgid "Ravi Gadhiya"
 msgstr ""
 
 #. Author URI of the plugin
-msgid "https://profiles.wordpress.org/ravigadhiyawp"
+msgid "https://github.com/ravigadhiya007"
 msgstr ""
 
 #: build/index.js:1

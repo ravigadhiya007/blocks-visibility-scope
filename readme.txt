@@ -5,7 +5,7 @@ Tags: gutenberg, block editor, responsive, visibility, hide block
 Requires at least: 6.3
 Tested up to: 6.8
 Requires PHP: 7.4
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -35,6 +35,11 @@ You can decide where each block should be visible: small phones, tablets, laptop
 * 100% compatible with the **WordPress block editor (Gutenberg)**.  
 
 This is the simplest way to add responsive block visibility in WordPress without writing a single line of code.
+
+== Get Involved ==
+
+The plugin is developed openly on GitHub—follow the project, contribute, or give it a ⭐ to show your support!
+* [View on GitHub](https://github.com/ravigadhiya007/blocks-visibility-scope/)
 
 == Installation ==
 
@@ -79,6 +84,9 @@ No. The plugin is lightweight and only adds minimal CSS classes to blocks.
 This plugin is designed for the **WordPress block editor (Gutenberg)**. It will not work with other page builders. 
 
 == Changelog ==
+
+= 1.0.1 =
+* Applied review feedback from Plugin Review Team.
 
 = 1.0.0 =
 * Initial release.  
