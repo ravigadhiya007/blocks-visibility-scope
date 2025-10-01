@@ -22,24 +22,24 @@ You can decide where each block should be visible: small phones, tablets, laptop
 3. Toggle the switches to choose where the block should be hidden or visible across different screen sizes.
 
 **Features:**
-* Hide or show blocks based on screen size:
+1. Hide or show blocks based on screen size:
   - Extra Small (<576px – small phones)  
   - Small (576–767px – large phones)  
   - Medium (768–991px – tablets)  
   - Large (992–1199px – laptops)  
   - Extra Large (1200–1399px – desktops)  
   - XXL (≥1400px – wide screens)  
-* Works with **all WordPress blocks**.  
-* Live preview: blocks with visibility rules are highlighted in the editor for easy identification.  
-* Lightweight – minimal code, no heavy dependencies.
-* 100% compatible with the **WordPress block editor (Gutenberg)**.  
+2. Works with **all WordPress blocks**.  
+3. Live preview: blocks with visibility rules are highlighted in the editor for easy identification.  
+4. Lightweight – minimal code, no heavy dependencies.
+5. 100% compatible with the **WordPress block editor (Gutenberg)**.  
 
 This is the simplest way to add responsive block visibility in WordPress without writing a single line of code.
 
 == Get Involved ==
 
 The plugin is developed openly on GitHub—follow the project, contribute, or give it a ⭐ to show your support!
-* [View on GitHub](https://github.com/ravigadhiya007/blocks-visibility-scope/)
+[View on GitHub](https://github.com/ravigadhiya007/blocks-visibility-scope/)
 
 == Installation ==
 
