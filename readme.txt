@@ -23,11 +23,11 @@ You can decide where each block should be visible: small phones, tablets, laptop
 
 **Features:**
 1. Hide or show blocks based on screen size:
-  - Extra Small (<576px – small phones)  
-  - Small (576–767px – large phones)  
-  - Medium (768–991px – tablets)  
-  - Large (992–1199px – laptops)  
-  - Extra Large (1200–1399px – desktops)  
+  - Extra Small ( <576px – small phones )  
+  - Small ( 576–767px – large phones )  
+  - Medium ( 768–991px – tablets )  
+  - Large ( 992–1199px – laptops )  
+  - Extra Large ( 1200–1399px – desktops )  
   - XXL (≥1400px – wide screens)  
 2. Works with **all WordPress blocks**.  
 3. Live preview: blocks with visibility rules are highlighted in the editor for easy identification.  
