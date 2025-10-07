@@ -1,4 +1,6 @@
 # Blocks Visibility Scope
+![Block Visibility Scope](https://github.com/ravigadhiya007/blocks-visibility-scope/blob/main/_wp.org/assets/banner-1544x500.jpg)
+
 Block Visibility Scope gives you **full responsive control over any WordPress block**.
 You can decide where each block should be visible: small phones, tablets, laptops, desktops, or wide screens. 
 
